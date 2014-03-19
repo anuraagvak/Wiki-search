@@ -1,0 +1,9 @@
+Run the command "make" to create the binaries 
+
+./step1 is a binary which takes in the xml file as an argument and saves the index of the xml file in ./data/ folder.
+
+./query is a binary which takes in an xml file as an argument and outputs the Document IDs in which the query is present
+
+"make clean" removes all the binaries
+
+As specified in the assignment I have created index.sh install.sh query.sh

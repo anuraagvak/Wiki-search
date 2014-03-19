@@ -1,0 +1,23 @@
+   
+   <airports>
+   
+      <airport name="CDG">
+   
+         <aliases>
+            <alias>Charles de Gaulle airport</alias>
+            <alias>Roissy airport</alias>
+         </aliases>
+   
+         <location>Paris, France</location>
+   
+         <comment>
+         Terminal 3 has a very 1970's sci-fi decor
+         </comment>
+   
+      </airport>
+   
+      <!-- ... other airport defs ...  -->
+   
+   </airports>
+   
+ 

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE note SYSTEM "primary.dtd">
+
+<!-- intentionally bad file, to test error handling -->
+
+<metadata xmlns="http://linux.duke.edu/metadata/common" xmlns:rpm="http://linux.duke.edu/metadata/rpm" packages="3485">
+
+<package/>
+
+<package type="rpm">
+  <name>portmap</name>
+  <arch>i386</arch>
+  <version epoch="0" ver="4.0" rel="64"/>
+  <checksum type="sha" pkgid="YES">5607d14a1a82ee4cd09119d979f374ed672b8c57</checksum>
+  <summary>A program which manages RPC connections.</summary>
+  <description>The portmapper program is a security tool which prevents theft of NIS
+(YP), NFS and other sensitive information via the portmapper.  A
+portmapper manages RPC connections, which are used by protocols like
+NFS and NIS.
+
+The portmap package should be installed on any machine which acts as a
+server for protocols using RPC.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url/>
+  <time file="1113032381" build="1113032383"/>
+  <size package="35586" installed="53709" archive="55392"/>
+  <location href="Fedora/RPMS/portmap-4.0-64.i386.rpm"/>
+  <format>
+    <rpm:license>BSD</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Daemons</rpm:group>
+    <rpm:buildhost>decompose.build.redhat.com</rpm:buildhost>
+    <rpm:sourcerpm>portmap-4.0-64.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="280" end="9516"/>
+    <rpm:provides>
+      <rpm:entry name="portmap" flags="EQ" epoch="0" ver="4.0" rel="64"/>
+      <rpm:entry name="config(portmap)" flags="EQ" epoch="0" ver="4.0" rel="64"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="libc.so.6(GLIBC_2.3)"/>
+      <rpm:entry name="/bin/sh" pre="1"/>
+      <rpm:entry name="/bin/sh"/>
+      <rpm:entry name="/etc/init.d" pre="1"/>
+      <rpm:entry name="libc.so.6(GLIBC_2.1)"/>
+      <rpm:entry name="libc.so.6(GLIBC_2.1.3)"/>
+      <rpm:entry name="config(portmap)" flags="EQ" epoch="0" ver="4.0" rel="64"/>
+      <rpm:entry name="libc.so.6(GLIBC_2.0)"/>
+      <rpm:entry name="libnsl.so.1(GLIBC_2.0)"/>
+      <rpm:entry name="rpmlib(PayloadFilesHavePrefix)" flags="LE" epoch="0" ver="4.0" rel="1" pre="1"/>
+      <rpm:entry name="libc.so.6"/>
+      <rpm:entry name="libc.so.6(GLIBC_2.3.4)"/>
+      <rpm:entry name="util-linux" flags="GE" epoch="0" ver="2.11b"/>
+      <rpm:entry name="initscripts" flags="GE" epoch="0" ver="5.54"/>
+      <rpm:entry name="/sbin/chkconfig" pre="1"/>
+      <rpm:entry name="rpmlib(CompressedFileNames)" flags="LE" epoch="0" ver="3.0.4" rel="1" pre="1"/>
+      <rpm:entry name="libnsl.so.1"/>
+    </rpm:requires>
+    <file>/etc/rc.d/init.d/portmap</file>
+    <file>/usr/sbin/pmap_dump</file>
+    <file>/usr/sbin/pmap_set</file>
+    <file>/sbin/portmap</file>
+  </format>
+</package>
+<package type="rpm">
+  <name>gdbm</name>
+  <arch>i386</arch>
+  <version epoch="0" ver="1.8.0" rel="25"/>
+  <checksum type="sha" pkgid="YES">35f82958d0131f14ded00edea3ad50c7a0f01c6e</checksum>
+  <summary>A GNU set of database routines which use extensible hashing.</summary>
+  <description>Gdbm is a GNU database indexing library, including routines which use
+extensible hashing.  Gdbm works in a similar way to standard UNIX dbm
+routines.  Gdbm is useful for developers who write C applications and
+need access to a simple and efficient database or who are building C
+applications which will use such a database.
+
+If you're a C developer and your programs need access to simple
+database routines, you should install gdbm.  You'll also need to
+install gdbm-devel.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>http://www.gnu.org/software/gdbm/</url>
+  <time file="1113024725" build="1113024726"/>
+  <size package="26626" installed="46694" archive="47688"/>
+  <location href="Fedora/RPMS/gdbm-1.8.0-25.i386.rpm"/>
+  <format>
+    <rpm:license>GPL</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Libraries</rpm:group>
+    <rpm:buildhost>decompose.build.redhat.com</rpm:buildhost>
+    <rpm:sourcerpm>gdbm-1.8.0-25.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="280" end="5624"/>
+    <rpm:provides>
+      <rpm:entry name="libgdbm.so.2"/>
+      <rpm:entry name="gdbm" flags="EQ" epoch="0" ver="1.8.0" rel="25"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="rpmlib(PayloadFilesHavePrefix)" flags="LE" epoch="0" ver="4.0" rel="1" pre="1"/>
+      <rpm:entry name="libc.so.6"/>
+      <rpm:entry name="libc.so.6(GLIBC_2.1.3)"/>
+      <rpm:entry name="libc.so.6(GLIBC_2.0)"/>
+      <rpm:entry name="rpmlib(CompressedFileNames)" flags="LE" epoch="0" ver="3.0.4" rel="1" pre="1"/>
+      <rpm:entry name="/sbin/ldconfig" pre="1"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>gdbm-devel</name>
+  <arch>i386</arch>
+  <version epoch="0" ver="1.8.0" rel="25"/>
+  <checksum type="sha" pkgid="YES">92996a15b6917db49a9647745d160ede4aa0531f</checksum>
+  <summary>Development libraries and header files for the gdbm library.</summary>
+  <description>Gdbm-devel contains the development libraries and header files for
+gdbm, the GNU database system.  These libraries and header files are
+necessary if you plan to do development using the gdbm database.
+
+Install gdbm-devel if you are developing C programs which will use the
+gdbm database library.  You'll also need to install the gdbm package.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>http://www.gnu.org/software/gdbm/</url>
+  <time file="1113024725" build="1113024726"/>
+  <size package="36695" installed="77288" archive="78800"/>
+  <location href="Fedora/RPMS/gdbm-devel-1.8.0-25.i386.rpm"/>
+  <format>
+    <rpm:license>GPL</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>Development/Libraries</rpm:group>
+    <rpm:buildhost>decompose.build.redhat.com</rpm:buildhost>
+    <rpm:sourcerpm>gdbm-1.8.0-25.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="280" end="6096"/>
+    <rpm:provides>
+      <rpm:entry name="gdbm-devel" flags="EQ" epoch="0" ver="1.8.0" rel="25"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="rpmlib(PayloadFilesHavePrefix)" flags="LE" epoch="0" ver="4.0" rel="1" pre="1"/>
+      <rpm:entry name="/bin/sh" pre="1"/>
+      <rpm:entry name="gdbm" flags="EQ" epoch="0" ver="1.8.0"/>
+      <rpm:entry name="rpmlib(CompressedFileNames)" flags="LE" epoch="0" ver="3.0.4" rel="1" pre="1"/>
+      <rpm:entry name="/sbin/install-info" pre="1"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>mysqlclient10</name>
+  <arch>i386</arch>
+  <version epoch="0" ver="3.23.58" rel="6"/>
+  <checksum type="sha" pkgid="YES">d8a2a86145591374fd729effb076e2e28eff5c67</checksum>
+  <summary>Backlevel MySQL shared libraries.</summary>
+  <description>This package contains backlevel versions of the MySQL client libraries
+as shipped with Red Hat Linux 9 for use with applications linked against
+them.  These shared libraries were created using MySQL 3.23.58.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>http://www.mysql.com</url>
+  <time file="1113003477" build="1113003478"/>
+  <size package="236207" installed="454795" archive="455736"/>
+  <location href="Fedora/RPMS/mysqlclient10-3.23.58-6.i386.rpm"/>
+  <format>
+    <rpm:license>LGPL</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>Applications/Databases</rpm:group>
+    <rpm:buildhost>decompose.build.redhat.com</rpm:buildhost>
+    <rpm:sourcerpm>mysqlclient10-3.23.58-6.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="280" end="4716"/>
+    <rpm:provides>
+      <rpm:entry name="libmysqlclient.so.10"/>
+      <rpm:entry name="libmysqlclient_r.so.10.0.0"/>
+      <rpm:entry name="mysqlclient10" flags="EQ" epoch="0" ver="3.23.58" rel="6"/>
+      <rpm:entry name="libmysqlclient.so.10.0.0"/>
+      <rpm:entry name="libmysqlclient_r.so.10"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="libc.so.6(GLIBC_2.2)"/>
+      <rpm:entry name="libc.so.6(GLIBC_2.1)"/>
+      <rpm:entry name="libpthread.so.0(GLIBC_2.0)"/>
+      <rpm:entry name="libc.so.6(GLIBC_2.1.2)"/>
+      <rpm:entry name="libc.so.6(GLIBC_2.1.3)"/>
+      <rpm:entry name="libz.so.1"/>
+      <rpm:entry name="libpthread.so.0"/>
+      <rpm:entry name="libc.so.6(GLIBC_2.3.4)"/>
+      <rpm:entry name="libpthread.so.0(GLIBC_2.3.2)"/>
+      <rpm:entry name="libc.so.6(GLIBC_2.3)"/>
+      <rpm:entry name="rpmlib(PayloadFilesHavePrefix)" flags="LE" epoch="0" ver="4.0" rel="1" pre="1"/>
+      <rpm:entry name="fileutils" pre="1"/>
+      <rpm:entry name="libc.so.6(GLIBC_2.0)"/>
+      <rpm:entry name="libnsl.so.1"/>
+      <rpm:entry name="grep" pre="1"/>
+      <rpm:entry name="/sbin/install-info" pre="1"/>
+      <rpm:entry name="bash"/>
+      <rpm:entry name="libc.so.6"/>
+      <rpm:entry name="libpthread.so.0(GLIBC_2.2)"/>
+      <rpm:entry name="chkconfig" pre="1"/>
+      <rpm:entry name="rpmlib(CompressedFileNames)" flags="LE" epoch="0" ver="3.0.4" rel="1" pre="1"/>
+      <rpm:entry name="libcrypt.so.1"/>
+      <rpm:entry name="/sbin/ldconfig" pre="1"/>
+      <rpm:entry name="libm.so.6"/>
+    </rpm:requires>
+    <file>/etc/ld.so.conf.d/mysqlclient10-i386.conf</file>
+  </format>
+</package>
+</metadata>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT package (name, arch, version, checksum+, summary, description,
+                   packager, size, url, location, format)>
+<!ATTLIST package type CDATA #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT arch (#PCDATA)>
+<!ELEMENT version (#PCDATA)>
+<!ATTLIST version epoch CDATA #REQUIRED
+                  ver CDATA #REQUIRED
+                  rel CDATA #REQUIRED>
+<!ELEMENT checksum (#PCDATA)>
+<!ATTLIST checksum type CDATA #REQUIRED
+                   pkgid CDATA #REQUIRED>
+<!ELEMENT summary (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT packager (#PCDATA)>
+<!ELEMENT size EMPTY>
+<!ATTLIST size package CDATA #REQUIRED
+               installed CDATA #REQUIRED
+               archive CDATA #IMPLIED>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT location EMPTY>
+<!ATTLIST location xml:base CDATA #REQUIRED
+                   href CDATA #REQUIRED>
+<!ELEMENT format EMPTY>
+<!ELEMENT file (#PCDATA)>
+<!ATTLIST file type CDATA #IMPLIED>
